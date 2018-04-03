@@ -1,0 +1,146 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  //padding: 30% 2rem 0;
+  .login-box{
+    width: 86%;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 10% auto 0;
+    box-shadow: 2px 4px 4px #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 1rem;
+    input{
+      font-size: 1.2rem;
+    }
+    input::-webkit-input-placeholder{ /*WebKit browsers*/
+      font-size: 1.2rem;
+      color: lightgrey;
+    }
+
+    input::-moz-input-placeholder{ /*Mozilla Firefox*/
+      font-size: 1.2rem;
+      color: lightgrey;
+    }
+
+    input::-ms-input-placeholder{ /*Internet Explorer*/
+      font-size: 1.2rem;
+      color: lightgrey;
+    }
+  }
+  .input-group {
+    width: 100%;
+
+    .input-box {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem 0;
+      border-bottom: 1px solid #eeeeee;
+      img {
+        height: 1.2rem;
+        max-width: 1rem;
+        width: 10%;
+      }
+      input {
+        border: none;
+        outline: none;
+        padding: 0.25rem 0.5rem;
+        min-width: 100px;
+        width: 60%;
+      }
+      .get-code {
+        font-size: 1rem;
+        color: #2999f0;
+        line-height: 1.5;
+      }
+      .get-code, .disable-time {
+        width: 30%;
+        white-space: nowrap;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+    //border-bottom: 1px solid lightgrey;
+    margin-bottom: 2rem;
+  }
+  .btn-group {
+    width: 100%;
+    .login-btn {
+      background: #2999f0;
+      color: #ffffff;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .quick-login {
+    margin-top: 3rem;
+    position: relative;
+    border-top: 1px solid lightgrey;
+    width: 100%;
+    white-space: nowrap;
+    span {
+      position: absolute;
+      color: lightgrey;
+      background: #ffffff;
+      top: -1rem;
+      display: inline-block;
+      padding: 0.25rem;
+      width: 35%;
+      text-align: center;
+      font-size: 1rem;
+      left: 30%;
+    }
+    .third-part-login {
+      margin: 2rem auto;
+      //display: flex;
+      //align-items: center;
+      //justify-content: center;
+      text-align: center;
+      img {
+        width: 3.5rem;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .protocol {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    i, span {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    a {
+      font-size: 1rem;
+      color: #2999f0;
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+  .weui-toast__content {
+    color: #ffffff;
+  }
+}
+
+.disabledBg {
+  background: #F7F7F7 !important;
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+.agreement,.vux-check-icon{
+  white-space: nowrap;
+  display: flex !important;
+  flex-wrap: nowrap;
+  align-items: center;
+}

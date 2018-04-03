@@ -1,0 +1,404 @@
+html,
+body,
+ul,
+li,
+p,
+span,
+a {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  background: #fff;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+.btn:focus {
+  background: #fff;
+  color: #333;
+}
+
+.btn:active {
+  background-color: #81d741;
+  color: #fff;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.weui-toast__content {
+  color: #ffffff;
+}
+.empty {
+  text-align: center;
+  margin-top: 45%;
+  img {
+    max-width: 50%;
+  }
+}
+.divider {
+  height: 0.5rem;
+  width: 100%;
+  background: #f4f3f6;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.my-toast {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: 8888;
+}
+
+.course-desc {
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  .title {
+    line-height: 2;
+    font-weight: bold;
+  }
+  .desc {
+    font-size: 0.8rem;
+    color: gray;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      line-height: 2;
+    }
+  }
+  .orignal-price {
+    text-decoration: line-through;
+    color: lightgrey;
+    font-size: 0.8rem;
+  }
+  .activity-price {
+    color: orange;
+  }
+  .author, .sales-num, .played-num {
+    color: gray;
+    font-size: 0.8rem;
+  }
+}
+
+.funcs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .func-item {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+.vux-tab-ink-bar {
+  background-color: transparent;
+  background: linear-gradient(to right, #009deb 50%, #7888fc 50%) !important;
+  width: 4%;
+  border-radius: 100%;
+  margin-left: 14.5%;
+}
+
+.is-empty {
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  img {
+    max-width: 50%;
+  }
+}
+
+.purchase {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  text-align: center;
+  .price {
+    .activity-price {
+      color: orange;
+      text-align: center;
+      span {
+        color: orange;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+    .orignal-price {
+      color: gray;
+      text-decoration: line-through;
+      text-align: center;
+      span {
+        color: gray;
+        text-align: center;
+      }
+    }
+    flex: 1;
+  }
+  .cartList {
+    flex: 0.5;
+    height: 100%;
+    width: 100%;
+    //span.iconfont {
+    //  color: orange;
+    //  line-height: 3rem;
+    //  font-size: 1.5rem;
+    //  position: relative;
+    //}
+    .shop-cart{
+      background: url("../shop-cart.jpg") no-repeat;
+      background-size: contain;
+      background-position: center center;
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      top: 0.5rem;
+      left: 0.5rem;
+      right: 0.5rem;
+    }
+    .cart-num {
+      /*padding: 0.25rem;
+      border-radius: 50%;
+      background: orange;
+      color: #ffffff;
+      font-size: 0.5rem;
+      position: absolute;
+      right: -0.5rem;
+      top: -0.4rem;
+      //width: 0.5rem;
+      height: 0.5rem;
+      line-height: 0.5rem;*/
+      padding: 0.25rem;
+      border-radius: 50%;
+      background: orange;
+      color: #ffffff;
+      font-size: 0.75rem;
+      position: absolute;
+      right: -0.25rem;
+      top: -0.2rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+    }
+  }
+  .addToCart {
+    background: orange;
+    flex: 0.5;
+    width: 100%;
+    height: 100%;
+    .add-shop-cart{
+      background: url("../add-shop-cart.png") no-repeat;
+      background-size: contain;
+      background-position: center center;
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      top: 0.35rem;
+      left: 0rem;
+      right: 0.5rem;
+    }
+
+  }
+  .buy {
+    flex: 1;
+    background: #f97927;
+    color: #ffffff;
+    height: 100%;
+    line-height: 3rem;
+  }
+}
+
+.chapter-detail {
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+  .vux-tab-ink-bar {
+    margin-left: 22.5%;
+  }
+}
+
+.purchased {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background: #90c0e1;
+  background: linear-gradient(to right, #009deb, #7888fc);
+  color: #ffffff;
+}
+
+.bedge-box {
+  position: relative;
+  .bedge {
+    position: absolute;
+    //right: 3rem;
+    top: -0.5rem;
+    color: #2999f0;
+    border: 1px solid #2999f0;
+    border-radius: 0.25rem;
+    padding: 0rem 0.25rem;
+    -webkit-box-sizing: content-box;
+    box-sizing: border-box;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.weui-mask_transparent {
+  background: #fff;
+}
+
+.loading {
+  position: fixed;
+  z-index: 99999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  img {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 10%;
+  }
+}
+
+.toShare {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  img {
+    position: absolute;
+  }
+  .lead-to-share {
+    max-width: 80%;
+    top: 0;
+    left: 12%;
+  }
+  .i-know {
+    top: 57%;
+    left: 37%;
+    right: 37%;
+  }
+}
+.activity-price{
+  color: orange !important;
+}
+//提示框统一样式
+.dialog-demo {
+  .weui-dialog {
+    border-radius: 8px;
+    padding-bottom: 8px;
+    width: 60%;
+    padding: 1rem 1.5rem;
+    top: 40%;
+  }
+  .dialog-title {
+    line-height: 30px;
+    color: #666;
+    margin: 1rem auto;
+  }
+  .img-box {
+    height: 350px;
+    overflow: hidden;
+  }
+  .vux-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}

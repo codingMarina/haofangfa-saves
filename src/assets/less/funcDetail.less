@@ -1,0 +1,80 @@
+.func-detail {
+  box-sizing: border-box;
+  //padding-bottom: 4rem;
+  .vux-tab {
+    color: gray;
+    .vux-tab-item.vux-tab-selected {
+      color: #333;
+    }
+  }
+  .course-list {
+    width: 100%;
+    overflow-x: hidden;
+
+    .course-item {
+      box-sizing: border-box;
+      padding: 0.5rem 1rem;
+      //margin-bottom: 1rem;
+      width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        max-width: 45%;
+        margin-right: 5%;
+        border-radius: 1rem;
+      }
+      .course-info {
+        width: 50%;
+        overflow-x: hidden;
+        .title {
+          //font-weight: bold;
+          font-size: 1rem;
+          line-height:1.8;
+        }
+        .desc,.author {
+          color: gray;
+          font-size: 0.8rem;
+          line-height: 1.8;
+        }
+        .activity-price {
+          color: rgb(250,145,69);
+          span {
+            color: rgb(250,145,69);
+          }
+        }
+        .orignal-price {
+          color: gray;
+          text-decoration: line-through;
+          span {
+            color: gray;
+          }
+        }
+        .title, .desc, .author, .activity-price, .orignal-price {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  .course-info {
+    p, span {
+      color: gray;
+      font-size: 0.8rem;
+      line-height: 1.8;
+    }
+    .title {
+      color: #333333;
+    }
+    .price-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .divider{
+    height:0.25rem;
+  }
+}
